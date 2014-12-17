@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="../js/libs/d3/d3.v3.js" charset="utf-8"></script>
+        <script src="Verlauf2.js"></script>
+        <script src="Container.js"></script>
+        <script type="text/javascript" src="../js/libs/jquery/jquery.js"></script>
+        <script type="text/javascript" src="../js/libs/jquery-ui-1.11.2/jquery-ui.min.js"></script>
+        
+        <style>
+
+            .xaxis text, .yaxis text {
+              font: 10px sans-serif;
+            }
+
+            .speeddata{
+                stroke: green;
+                fill: green;
+            }
+            .xaxis text, yaxis text{
+                font: 10px sans-serif;
+            }
+            .xaxis path, .yaxis path, .xaxis line, .yaxis line{
+                fill: none;
+                stroke: black;
+                stroke-width: 2px;
+            }
+            .xaxis line{
+            }
+
+
+        </style>
+    
+    </head>
+    <body>
+        <div id="container"></div>
+        <script>
+            test = new Verlauf("container", "dfg");
+            setInterval(function(){
+                data = generateData(5,200);
+               // data = [0, 0, 0, 0, 200];
+                test.update(data);
+            }, 3000);
+        </script>
+    </body>
+</html>
