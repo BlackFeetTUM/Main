@@ -307,7 +307,7 @@
                     .attr("fill", this.colorArray[i])
                     .attr("height", "40");
         }
-        $("#" + container).append("<img class='slowfast' src='slow-fast.svg'/>");
+        $("#" + container).append("<img class='slowfast' src='slow-fast.svg' onError=\"this.src='slow-fast.png';\"/>");
         
         
         this.getName = function(){
@@ -403,7 +403,7 @@
            .attr("class", "yaxis")
            .attr("transform", "translate(" + y_legend_leftspace + "," + y_legend_topspace + ")");
 
-        $("#" + container).append("<img class='slowfast' src='slow-fast.svg'/>");
+        $("#" + container).append("<img class='slowfast' src='slow-fast.svg' onError=\"this.src='slow-fast.png';\"/>");
 
 
 
@@ -500,7 +500,7 @@
                .append("path")
                     .attr("d", "m 5.0084763,1048.752 -4.50339999,7.8001 -4.50340011,-7.8001 z")
                     .attr("fill", "black");
-        $("#" + container).append("<img class='slowfast' src='slow-fast.svg'/>");
+        $("#" + container).append("<img class='slowfast' src='slow-fast.svg' onError=\"this.src='slow-fast.png';\"/>");
         
         this.getName = function(){
             return name;
@@ -602,7 +602,7 @@
         svg.append("g")
                 .attr("class", "circleContainer");
         
-        $("#" + container).append("<img class='slowfast' src='slow-fast.svg'/>");
+        $("#" + container).append("<img class='slowfast' src='slow-fast.svg' onError=\"this.src='slow-fast.png';\"/>");
         $("#" + container + " .slowfast").css("top", "-10px");
         
         this.getName = function(){
@@ -688,7 +688,7 @@
         svg.append("g")
                 .attr("class", "circleContainer");
    
-        $("#" + container).append("<img class='slowfast' src='slow-fast.svg'/>");
+        $("#" + container).append("<img class='slowfast' src='slow-fast.svg' onError=\"this.src='slow-fast.png';\"/>");
         $("#" + container + " .slowfast").css("top", "-10px");
     this.getName = function(){
             return name;
