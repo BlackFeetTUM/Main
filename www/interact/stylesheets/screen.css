@@ -149,6 +149,7 @@ input {
 /* line 66, ../sass/screen.scss */
 .submit {
   background-image: url(submit.svg);
+  background-image: url(submit.png);
   background-repeat: no-repeat;
   border: none;
   margin-left: 87%;
