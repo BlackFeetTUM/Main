@@ -14,7 +14,7 @@ html, body{
 body {
   background-color: #FFF;
   background-image: linear-gradient(to right, #f0f0f0, #ffffff 80%, #f0f0f0);
-  font-family: "Calibri";
+  font-family: "Calibri", sans-serif;
 }
 
 button, select{
@@ -188,7 +188,6 @@ li:hover{
     margin: 0 50px;
     margin-bottom: 10px;
     position: relative;
-    font-family: "Calibri";
     padding-top: 10px;
     float: left;
     cursor: move;
@@ -214,7 +213,6 @@ li:hover{
     position: absolute;
     left: 80px;
     top: 10px;
-    font-family: "Calibri";
     font-size: 18px;
     text-align: center;
 }
@@ -223,7 +221,6 @@ li:hover{
     position: absolute;
     left: 90px;
     top: 110px;
-    font-family: "Calibri";
     font-size: 18px;
     text-align: center; 
 }

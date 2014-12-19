@@ -20,5 +20,8 @@ function inputcontrolinit(){
             this.valuemem = this.value;
             this.value = null;
         };
+        if(this.id === "password" || this.id === "password-confirm"){
+            this.type = "password";
+        }
     });
 }
